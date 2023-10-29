@@ -7,7 +7,7 @@
     dod = a+b;
     odj = a-b;
     mno = a*b;
-    dzie = a/b;
+    dzie = (float)a/(float)b;
     rzdzie = a%b;
     printf("Wynik dodawania podanych liczb to %d\n", dod);
     printf("Wynik odejmowania to %d\n", odj);
