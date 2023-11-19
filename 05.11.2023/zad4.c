@@ -3,28 +3,32 @@
 //todo
 #include<stdio.h>
 
-int table_function(int num_table)
+void sqrt_table(int tablef[], int sizef)
 {
-    int table[num_table];
-    for (int i=0; i<num_table; i++)
+    int table_return[sizef];
+    for(int i = 0; i <= sizef; i++)
     {
-        int num;
-        printf("Podaj wartosc do tabeli: \n")
-        scanf("%d", &num);
-        table[i] = num
+        table_return[i] = (tablef[i]) * (tablef[i]);
     }
-}
-int sqrt_table(int table)
-{
-
+    printf("Twoja tabela do kwadratu to %d", table_return);
 }
 
 int main()
 {
     int num;
-    int table;
-    printf("Podaj liczbe wielkosc tablicy ktora mam stworzyc;");
-    scanf("%d", &num);
-    table = table_function(num);
-    table_2 = sqrt_table(table);
+    int size = 5;
+    long int table1[size];
+    char flag = 't';
+    int i = 0;
+
+    printf("Podaj liczby do tablicy a ja zworce to jako kwadrat: \n");
+
+    for (i=0; i<size; i++)
+    {
+        scanf("%d", &num);
+        table1[i] = num;
+    }
+    sqrt_table(table1[], size);
+    //printf("Tabela %d do kwadratu %d", table1, table_sqrt);
+
 }
