@@ -15,6 +15,7 @@ unsigned char find1(unsigned char textf[], int sizef, int numberf)
 
 int main()
 {
+
     int size = 20;
     unsigned char text[size];
     int number;
