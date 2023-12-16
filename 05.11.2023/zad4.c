@@ -1,23 +1,42 @@
 //Napisz program który dla zadanej tablicy liczb stworzy i zwróci tablicę kwadratów tych liczb.
+#include <stdio.h>
 
-//todo
-#include<stdio.h>
-
-void sqrt_table(int tablef[], int sizef)
+int main()
 {
-    int table_return[sizef];
-    for(int i = 0; i <= sizef; i++)
+    int size;
+    printf("Podaj wielkosc tablicy jaka mam dla ciebie stworzyc: ");
+    scanf("%d", &size);
+    int tab_nums[size];
+
+    for (int i = 0; i < size; i++)
     {
-        table_return[i] = (tablef[i]) * (tablef[i]);
+        printf("Podaj liczbe: ");
+        scanf("%d", &tab_nums[i]);
     }
-    printf("Twoja tabela do kwadratu to %d", table_return);
+
+    printf("Twoja tablica wyglada tak: \n");
+    for (int i = 0; i < size; i++)
+    {
+        printf("Dla indeksu %d - %d\n", i, tab_nums[i]);
+    }
 }
 
+/*void sqrt_table(int tablef[], int sizef, int idx)
+{
+    if (sizef > idx)
+    {
+        int power = tablef[idx] * tablef[idx];
+        printf("liczba %d,", tablef[idx]);
+        printf(" potega to %d", power);
+        idx += 1;
+        return sqrt_table(tablef, sizef, idx);
+    }
+}
 int main()
 {
     int num;
     int size = 5;
-    long int table1[size];
+    int table1[size];
     char flag = 't';
     int i = 0;
 
@@ -28,7 +47,6 @@ int main()
         scanf("%d", &num);
         table1[i] = num;
     }
-    sqrt_table(table1[], size);
-    //printf("Tabela %d do kwadratu %d", table1, table_sqrt);
+    sqrt_table(table1, size, 0);
+}*/
 
-}

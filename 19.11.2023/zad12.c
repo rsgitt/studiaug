@@ -38,11 +38,51 @@ int daysLeftInYear(int year, int month, int day)
     return daysLeft;
 }
 
+int isEarlier(int year1, int month1, int day1, int year2, int month2, int day2)
+//zwraca 1 jezeli pierwsza data jest mniejsza, 2 jezeli druga
+{
+    if (year1 < year2)
+    {
+        return 1;
+    }
+    if (year1 == year2 && month1 < month2)
+    {
+        return 1;
+    }
+    if (year1 == year2 && month1 == month2 && day1 < day2)
+    {
+        return 1;
+    }
+    return 0;
+}
+
+int differenceBetweenDates(int year1, int month1, int day1, int year2, int month2, int day2)
+{
+    int daysBetween;
+
+    if (year1 == year2)
+    {
+        if (month1 == month2)
+        {
+            daysBetween = 
+        }
+        else
+        {
+
+        }
+    }
+    else
+    {
+
+    }
+}
+
 int main()
 {
     int year1, month1, day1;
-    printf("Podaj rok, miesiac i dzien a ja ci zwroce ile dni zostalo do konca roku: \n");
+    int year2, month2, day2;
+    printf("Podaj dwie daty a ja ci zwroce liczbe dni ktore je roznia \n");
     scanf("%d%d%d%d%d%d", &year1, &month1, &day1, &year2, &month2, &day2);
-    int daysLeft1 = daysLeftInYear(year, month, day);
-    printf("Do konca roku zostalo %d dni", daysLeft);
+    
+    printf("lczba dni ktore rozna podane daty to %d", );
 }
