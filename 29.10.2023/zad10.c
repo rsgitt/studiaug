@@ -16,6 +16,6 @@ int main()
     {
         printf("Nie mozna stworzyc trojkat o bokach\n %d, %d, %d", side1, side2, side3);
     }
-};
+}
 
 
