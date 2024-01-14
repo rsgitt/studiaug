@@ -6,22 +6,29 @@ sprawdzającą czy punkty w strukturze tworzą poprawny trójkąt.*/
 
 struct point
 {
-    float x, y;
-};
+    int x, y;
+} point;
 
 struct triangle
 {
     struct point p1;
     struct point p2;
     struct point p3;
-};
+} triangle;
 
-int segment(struct traingle * t)
+void segment(struct triangle t)
 {
-    
+    t.p1.x = 5;
+    printf("%d", t.p1.x);
+}
+
+int checkTriangle()
+{
+
 }
 
 int main()
 {
-
+    struct triangle t;
+    segment(t);
 }
